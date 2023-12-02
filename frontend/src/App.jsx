@@ -11,7 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cellphones" element={<FormPage />} />
-          <Route path="/cellphones/update/:id" element={<UpdateForm />} /> {/* Adicione esta linha */}
+          <Route path="/cellphones/update/:id" element={<UpdateForm />} />
         </Routes>
       </Router>
     </>
