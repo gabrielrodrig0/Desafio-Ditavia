@@ -8,7 +8,7 @@ const UpdateForm = () => {
   const [formData, setFormData] = useState({
     marca: '',
     modelo: '',
-    memoria: 0,
+    capacidade: 0,
     data: '',
   });
 
@@ -76,20 +76,20 @@ const UpdateForm = () => {
 
         <div className="md:flex md:items-center mb-6">
           <div className="md:w-1/3">
-            <label className="block text-gray-800 font-bold md:text-right mb-1 md:mb-0 pr-4" htmlFor="memoria">
+            <label className="block text-gray-800 font-bold md:text-right mb-1 md:mb-0 pr-4" htmlFor="capacidade">
               Memória
             </label>
           </div>
           <div className="md:w-2/3">
             <input
               className="bg-white appearance-none border-2 border-gray-100 rounded w-3/4 py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white  focus:border-gray-800"
-              id="memoria"
+              id="capacidade"
               type="number"
               min="0"
               max="64"
               required
-              value={formData.memoria}
-              onChange={(e) => setFormData({ ...formData, memoria: e.target.value })}
+              value={formData.capacidade}
+              onChange={(e) => setFormData({ ...formData, capacidade: parseInt(e.target.value, 10) || 0 })}
             />
           </div>
         </div>
