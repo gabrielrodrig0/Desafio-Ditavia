@@ -117,7 +117,7 @@ const CreateForm = () => {
           <hr className='mb-6'></hr>
           <div className="flex justify-center space-x-4 mb-6">
             <button className='bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow' onClick={cancel}>Cancelar</button>
-            <button className='bg-white hover-bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow' onClick={handleCreate}>Criar</button>
+            <button className='bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow' onClick={handleCreate}>Criar</button>
           </div>
         </form>
       </div>
