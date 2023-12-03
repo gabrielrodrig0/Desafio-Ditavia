@@ -10,8 +10,9 @@ export function formatarDataEscrita(dataString) {
     const mes = meses[data.getMonth()];
     const ano = data.getFullYear();
     
+    
   
-    return `${dia} de ${mes} de ${ano}`;
+    return `${dia+1} de ${mes} de ${ano}`;
   }
   
   
